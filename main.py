@@ -36,7 +36,17 @@ def handle_complete(manager):
 
 
 def handle_delete(manager):
-    print("Deleting tasks is coming soon.")
+    show_tasks(manager)
+    raw = input("ID of the task to delete: ").strip()
+    if not raw.isdigit():
+        print("Error: please enter a numeric task ID.")
+        return
+    try:
+        task = manager.delete_task(int(raw))
+    except KeyError as error:
+        print(f"Error: {error.args[0]}")
+        return
+    print(f"Deleted: {task.title}")
 
 
 def main():
