@@ -10,4 +10,4 @@ complete Git and GitHub workflow.
 python main.py
 ```
 
-Project status: Planning
+Project status: Testing - unit tests being written
