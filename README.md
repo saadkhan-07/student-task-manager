@@ -9,3 +9,5 @@ complete Git and GitHub workflow.
 ```bash
 python main.py
 ```
+
+Project status: Planning
