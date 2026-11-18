@@ -38,7 +38,7 @@ class TestTaskManager(unittest.TestCase):
         second = self.manager.add_task("Task two")
         self.manager.delete_task(first.id)
         remaining = self.manager.list_tasks()
-        self.assertEqual(len(remaining), 2)
+        self.assertEqual(len(remaining), 1)
         self.assertEqual(remaining[0].id, second.id)
 
     def test_tasks_are_saved_to_file(self):
