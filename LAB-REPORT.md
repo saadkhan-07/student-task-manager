@@ -1,7 +1,7 @@
 # Lab Report – Assignment 4: Student Task Manager with Git and GitHub
 
 **Course:** DevOps for Cloud Computing (CSC418)
-**Student:** Sharjeel Shahzad (FA23-BSE-170)
+**Student:** Saad Muhammad (FA23-BSE-164)
 **Repository:** https://github.com/saadkhan-07/student-task-manager
 **Release:** https://github.com/saadkhan-07/student-task-manager/releases/tag/v1.0.0
 
