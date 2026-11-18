@@ -10,4 +10,4 @@ complete Git and GitHub workflow.
 python main.py
 ```
 
-Project status: Planning
+Project status: In Progress - core features complete
