@@ -32,7 +32,17 @@ def handle_add(manager):
 
 
 def handle_complete(manager):
-    print("Completing tasks is coming soon.")
+    show_tasks(manager)
+    raw = input("ID of the task to complete: ").strip()
+    if not raw.isdigit():
+        print("Error: please enter a numeric task ID.")
+        return
+    try:
+        task = manager.complete_task(int(raw))
+    except KeyError as error:
+        print(f"Error: {error.args[0]}")
+        return
+    print(f"Completed: {task}")
 
 
 def handle_delete(manager):
