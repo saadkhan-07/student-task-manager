@@ -10,4 +10,4 @@ complete Git and GitHub workflow.
 python main.py
 ```
 
-Project status: In Progress - core features complete
+Project status: In Progress - core features complete; Testing - unit tests being written
