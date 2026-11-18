@@ -53,7 +53,12 @@ class TaskManager:
 
     # ---------- complete ----------
     def complete_task(self, task_id):
-        raise NotImplementedError("Completing tasks is not implemented yet")
+        task = self.find_task(task_id)
+        if task is None:
+            raise KeyError(f"No task with ID {task_id}")
+        task.completed = True
+        self.save()
+        return task
 
     # ---------- delete ----------
     def delete_task(self, task_id):
